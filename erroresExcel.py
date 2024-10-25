@@ -95,7 +95,7 @@ def validar_apellidos(apellidos):
         return True
     return False
 
-# Función para validar la cédula ecuatoriana 
+# Función para validar la cédula ecuatoriana
 def validar_cedula(cedula):
     if pd.isna(cedula):
         return False
@@ -217,7 +217,7 @@ def analizar_calidad_datos(file_path):
             cell.fill = fill_red
             errores['codigo_est'] += 1
 
-    output_path = file_path.replace(".xlsx", "_validado.xlsx")
+    output_path = file_path.replace(".xlsx", ".A.N.xlsx")
     wb.save(output_path)
 
     return errores, output_path
